@@ -1,0 +1,20 @@
+meta {
+  name: Create item
+  type: http
+  seq: 7
+}
+
+post {
+  url: https://api.kitek-pg.ru/api/marketplace/items
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "iPhone 17",
+    "description": "Новый iPhone 17 в идеальном состоянии, все аксессуары в комплекте",
+    "price": 80000,
+    "imageUrl": "https://example.com/iphone.png"
+  }
+}
